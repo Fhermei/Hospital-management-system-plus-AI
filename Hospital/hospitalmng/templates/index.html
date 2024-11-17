@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <section class="home">
+        <div class="content">
+            <h1>Diagnostic & Treatment</h1>
+            <h1>+System</h1>
+            <p class="site-desc">Discover the Impact of Artificial Intelligence on health and well being Artificial intelligence on <br> reshaping human health and well-being</p>
+
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms separated by commas">
+                <button class="fas fa-search" type="submit"></button>
+            </form>
+
+            <ul class="suggestion">
+                            <li><b>Suggestions: </b></li>
+                            <li><p>itching</p></li>
+                            <li><p>depression</p></li>
+                            <li><p>coughing</p></li>
+                            <li><p>aching</p></li>
+                            <li><p>more...</p></li>
+            </ul>
+
+            <h2 class="text-center">Searched results are shown below</h2>
+
+            <div class="result-container my-5">
+                    <div class="custom-card bg-white">
+                        <!-- Tabs Navigation -->
+                        <ul class="nav nav-tabs flex-wrap" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="disease-tab" data-bs-toggle="tab" data-bs-target="#disease" type="button" role="tab" aria-controls="disease" aria-selected="true">Prediction</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="false">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="medication-tab" data-bs-toggle="tab" data-bs-target="#medication" type="button" role="tab" aria-controls="medication" aria-selected="false">Medication</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="precaution-tab" data-bs-toggle="tab" data-bs-target="#precaution" type="button" role="tab" aria-controls="precaution" aria-selected="false">Precaution</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="diets-tab" data-bs-toggle="tab" data-bs-target="#diets" type="button" role="tab" aria-controls="diets" aria-selected="false">Diets</button>
+                        </li>
+                        </ul>
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content py-4 px-3 border-top" id="myTabContent">
+                        <!-- Diseases Tab -->
+                        <div class="tab-pane fade show active" id="disease" role="tabpanel" aria-labelledby="disease-tab">
+                            <p>{{prediction}}</p>
+                        </div>
+
+                        <!-- Description Tab -->
+                        <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <h5> Prediction: <b>{{prediction}}</b></h5> <br>
+                            <p>{{description}}
+                            </p>
+                        </div>
+
+                        <!-- Medication Tab -->
+                        <div class="tab-pane fade" id="medication" role="tabpanel" aria-labelledby="medication-tab">
+                            <h5> Prediction: <b>{{prediction}}</b></h5> <br>
+                            <ul>
+                                {% for i in medications %}
+                                    <li>{{ i }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- precaution Tab -->
+                        <div class="tab-pane fade" id="precaution" role="tabpanel" aria-labelledby="precaution-tab">
+                            <h5> Prediction: <b>{{prediction}}</b></h5> <br>
+                            <ul>
+                                {% for i in precautions %}
+                                    <li>{{ i }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- Diets Tab -->
+                        <div class="tab-pane fade" id="diets" role="tabpanel" aria-labelledby="diets-tab">
+                            <h5> Prediction: <b>{{prediction}}</b></h5> <br>
+                            <ul>
+                                {% for i in diet %}
+                                    <li>{{ i }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- section section ends -->
+
+    <section class="review">
+
+        <h1 class="heading">Speak with a <br>Doctor Today</h1>
+        <h3 class="title">Lorem ipsum dolor, sit amet </h3>
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <img src="{% static 'img/doc1.jpg' %}" alt="">
+                <h3>Dr. Gold</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis at rerum temp</p>
+                <a href="#"><button>Contact us</button></a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/doc2.jpg' %}" alt="">
+                <h3>Dr. Mercy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis at rerum temp</p>
+                <a href="#"><button>Contact us</button></a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/doc3.jpg' %}" alt="">
+                <h3>Dr. David</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis at rerum temp</p>
+                <a href="#"><button>Contact us</button></a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/doc4.jpg' %}" alt="">
+                <h3>Dr. White</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis at rerum temp</p>
+                <a href="#"><button>Contact us</button></a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/doc2.jpg' %}" alt="">
+                <h3>Dr. Mercy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis at rerum temp</p>
+                <a href="#"><button>Contact us</button></a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'img/doc3.jpg' %}" alt="">
+                <h3>Dr. David</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis at rerum temp</p>
+                <a href="#"><button>Contact us</button></a>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="course" id="courses">
+
+        <h1 class="heading">Blog</h1>
+        <h3 class="title">Latest news about health</h3>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <i class="fab fa-power"></i>
+                <h3>Mental Health</h3>
+                <p>Techniques for medication and wellness.</p>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fab fa-power"></i>
+                <h3>Anxiety</h3>
+                <p>Do you fell anxious <br>Lorem ipsum dolor sit amet d</p>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fab fa-power"></i>
+                <h3>Health and Fitness</h3>
+                <p> Track your daily routines, experience some training plans and assess health </p>
+            </a>
+
+            <a href="#" class="box">
+                <i class="fas fa-power"></i>
+                <h3>Weight Loss Options</h3>
+                <p>Track your daily routines, experience some training plans</p>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div >
+         <h1 class="heading">Contact Us</h1>
+        <h3 class="title">we love conversation, lets talk</h3>
+
+        </div>
+        <div class="form-container">
+            <form action="">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="enter your email">
+                <input type="number" placeholder="phone">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" value="message">
+            </form>
+        </div>
+    </section>
+
+
+
+{% endblock%}

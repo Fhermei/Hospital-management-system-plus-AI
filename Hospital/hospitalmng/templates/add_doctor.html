@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+{% if error == "no" %}
+     <script>
+	   alert('Doctor Record has been Updated');
+       window.location=('{% url 'view_doctor' %}');
+     </script>
+{% endif %}
+
+{% if error == "yes" %}
+     <script>
+	    alert('Something went wrong, Try Again');
+     </script>
+{% endif %}
+
+<div class="container" style="margin-top: 150px; margin-bottom: -10px; margin-left: 1000px;">
+</div>
+
+<div class="container card shadow m-5">
+		<div class="card-body">
+			<h5 class="p-2" style="border-bottom: 2px solid orange">Add Doctors</h5>
+             <br>
+			<div class="container-fluid">
+				<form method="post">
+                    {% csrf_token %}
+					<div class="form-row">
+
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label>Doctor Name</label>
+								<input type="text" name="name" class="form-control" value="{{doctor.name}}" required>
+							</div>
+						</div>
+
+                    	<div class="col-sm-12">
+							<div class="form-group">
+								<label>Contact Number</label>
+								<input type="text" name="mobile" class="form-control" value="{{doctor.mobile}}" required>
+							</div>
+						</div>
+
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label>Specialization</label>
+								<input type="text" name="special" class="form-control" value="{{doctor.special}}" required>
+							</div>
+						</div>
+
+                      </div>
+
+					<hr>
+					<input type="submit" value="Update" class="btn btn-primary">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock%}

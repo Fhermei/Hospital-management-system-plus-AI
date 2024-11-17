@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin Login </title>
+
+  <style type="text/css">
+    body {
+      color: #aa082e;
+      background-color: #b6bde7;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .note {
+      text-align: center;
+      height: 80px;
+      background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+      color: #fff;
+      font-weight: bold;
+      line-height: 80px;
+    }
+
+    .form-content {
+      padding: 4%;
+      border: 1px solid #ced4da;
+      margin-bottom: 1%;
+      text-align : center;
+    }
+
+    .form-control {
+      border-radius: 1.5rem;
+      text-align : center;
+    }
+
+    .btnSubmit {
+      border: none;
+      border-radius: 1.5rem;
+      padding: 1%;
+      width: 30%;
+      cursor: pointer;
+      background: #0062cc;
+      color: #fff;
+    }
+  </style>
+</head>
+
+
+{% if error == "yes" %}
+     <script>
+	   alert('Logged In Successfully');
+       window.location=('{% url 'home' %}');
+     </script>
+{% endif %}
+
+{% if error == "not" %}
+     <script>
+	    alert('Something went wrong, Try Again');
+     </script>
+{% endif %}
+
+<br><br><br><br>
+    <div class="form-bg" style="margin-top: 50px; text-align: center">
+        <div class="container">
+            <h2>Administration Login</h2>
+            <br>
+
+            <form>
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <div class="form-container">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label>Admin Name</label>
+                                <input type="name" class="form-control" name="uname" placeholder="your name">
+                            </div>
+                            <div class="form-group">
+                                <label>Admin Password</label>
+                                <input type="password" class="form-control" name="pwd"  placeholder="Password">
+                            </div>
+
+                            <input type="submit" class="btn form-control btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock%}

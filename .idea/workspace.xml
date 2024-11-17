@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="acf8610d-cfe7-4e9a-86ec-fba9d311b92d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Hospital management django.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/add_appointment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/add_doctor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/add_patient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/view_appointment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/view_doctor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hospital/hospitalmng/templates/view_patient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2omBd8yB1NJeAX3zcKLbUOyuW6e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\Hospital management django\Hospital\hospitalmng" />
+      <recent name="C:\Users\hp\Desktop\Hospital management django\Hospital\hospitalmng\static\models" />
+      <recent name="C:\Users\hp\Desktop\Hospital management django\Hospital\hospitalmng\static" />
+      <recent name="C:\Users\hp\Desktop\Hospital management django\Hospital\hospitalmng\models" />
+      <recent name="C:\Users\hp\Desktop\Hospital management django" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="acf8610d-cfe7-4e9a-86ec-fba9d311b92d" name="Changes" comment="" />
+      <created>1731464954494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731464954494</updated>
+      <workItem from="1731464955573" duration="28672000" />
+      <workItem from="1731519502105" duration="6536000" />
+      <workItem from="1731534041082" duration="6888000" />
+      <workItem from="1731547986051" duration="25000" />
+      <workItem from="1731550112690" duration="966000" />
+      <workItem from="1731800868955" duration="7380000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Hospital_management_django$main.coverage" NAME="main Coverage Results" MODIFIED="1731532954785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Hospital_management_django$views.coverage" NAME="views Coverage Results" MODIFIED="1731804515051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hospital/hospitalmng" />
+  </component>
+</project>
